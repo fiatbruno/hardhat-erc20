@@ -1,0 +1,32 @@
+{
+  "name": "hardhat-erc20",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "hardhat test",
+    "test-staging": "hardhat test",
+    "lint": "solhint 'contracts/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "format": "prettier --write .",
+    "coverage": "hardhat coverage"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.6",
+    "hardhat-deploy": "^0.11.22",
+    "hardhat-contract-sizer": "^2.6.1",
+    "hardhat-shorthand": "^1.0.0",
+    "prettier": "^2.8.1",
+    "prettier-plugin-solidity": "^1.1.1",
+    "solhint": "^3.3.7"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^16.0.3"
+  },
+  "mocha": {
+    "timeout": 10000000
+  }
+}
